@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		2F21BE0C1FB2AA2D0014391D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F21BE0B1FB2AA2D0014391D /* AppDelegate.swift */; };
-		2F21BE0E1FB2AA2D0014391D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F21BE0D1FB2AA2D0014391D /* ViewController.swift */; };
+		2F21BE0E1FB2AA2D0014391D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F21BE0D1FB2AA2D0014391D /* MapViewController.swift */; };
 		2F21BE111FB2AA2D0014391D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F21BE0F1FB2AA2D0014391D /* Main.storyboard */; };
 		2F21BE131FB2AA2D0014391D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F21BE121FB2AA2D0014391D /* Assets.xcassets */; };
 		2F21BE161FB2AA2D0014391D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F21BE141FB2AA2D0014391D /* LaunchScreen.storyboard */; };
+		2FAEBB211FB353B90085AF3D /* HotelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEBB201FB353B90085AF3D /* HotelTableViewController.swift */; };
+		2FAEBB231FB3F0200085AF3D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEBB221FB3F0200085AF3D /* WebViewController.swift */; };
+		2FAEBB261FB3F3540085AF3D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FAEBB251FB3F3540085AF3D /* MapKit.framework */; };
+		2FAEBB2A1FB400050085AF3D /* Hotel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEBB291FB400050085AF3D /* Hotel.swift */; };
+		2FAEBB2D1FB4024C0085AF3D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAEBB2C1FB4024C0085AF3D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F21BE081FB2AA2D0014391D /* Castle guide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Castle guide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F21BE0B1FB2AA2D0014391D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F21BE0D1FB2AA2D0014391D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F21BE0D1FB2AA2D0014391D /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		2F21BE101FB2AA2D0014391D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F21BE121FB2AA2D0014391D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F21BE151FB2AA2D0014391D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F21BE171FB2AA2D0014391D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FAEBB201FB353B90085AF3D /* HotelTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelTableViewController.swift; sourceTree = "<group>"; };
+		2FAEBB221FB3F0200085AF3D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		2FAEBB251FB3F3540085AF3D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2FAEBB291FB400050085AF3D /* Hotel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hotel.swift; sourceTree = "<group>"; };
+		2FAEBB2C1FB4024C0085AF3D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FAEBB261FB3F3540085AF3D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,7 @@
 			children = (
 				2F21BE0A1FB2AA2D0014391D /* Castle guide */,
 				2F21BE091FB2AA2D0014391D /* Products */,
+				2FAEBB241FB3F3540085AF3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +66,50 @@
 		2F21BE0A1FB2AA2D0014391D /* Castle guide */ = {
 			isa = PBXGroup;
 			children = (
+				2FAEBB2B1FB402210085AF3D /* Util */,
+				2FAEBB281FB3FFEA0085AF3D /* Model */,
+				2FAEBB271FB3F4040085AF3D /* Controller */,
 				2F21BE0B1FB2AA2D0014391D /* AppDelegate.swift */,
-				2F21BE0D1FB2AA2D0014391D /* ViewController.swift */,
 				2F21BE0F1FB2AA2D0014391D /* Main.storyboard */,
 				2F21BE121FB2AA2D0014391D /* Assets.xcassets */,
 				2F21BE141FB2AA2D0014391D /* LaunchScreen.storyboard */,
 				2F21BE171FB2AA2D0014391D /* Info.plist */,
 			);
 			path = "Castle guide";
+			sourceTree = "<group>";
+		};
+		2FAEBB241FB3F3540085AF3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2FAEBB251FB3F3540085AF3D /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FAEBB271FB3F4040085AF3D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2F21BE0D1FB2AA2D0014391D /* MapViewController.swift */,
+				2FAEBB201FB353B90085AF3D /* HotelTableViewController.swift */,
+				2FAEBB221FB3F0200085AF3D /* WebViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FAEBB281FB3FFEA0085AF3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FAEBB291FB400050085AF3D /* Hotel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FAEBB2B1FB402210085AF3D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2FAEBB2C1FB4024C0085AF3D /* Constants.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +145,11 @@
 					2F21BE071FB2AA2D0014391D = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -136,8 +189,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F21BE0E1FB2AA2D0014391D /* ViewController.swift in Sources */,
+				2FAEBB2A1FB400050085AF3D /* Hotel.swift in Sources */,
+				2F21BE0E1FB2AA2D0014391D /* MapViewController.swift in Sources */,
+				2FAEBB211FB353B90085AF3D /* HotelTableViewController.swift in Sources */,
 				2F21BE0C1FB2AA2D0014391D /* AppDelegate.swift in Sources */,
+				2FAEBB231FB3F0200085AF3D /* WebViewController.swift in Sources */,
+				2FAEBB2D1FB4024C0085AF3D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,11 +334,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35YQ8TWVH3;
 				INFOPLIST_FILE = "Castle guide/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doupi0331.app.Castle-guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -292,11 +350,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 35YQ8TWVH3;
 				INFOPLIST_FILE = "Castle guide/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.doupi0331.app.Castle-guide";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
